@@ -8,7 +8,7 @@ For this project, we chose a dataset from Kaggle concerning Mt. Rainier weather 
 
 The other source used was a HTML table from summitpost.org (https://www.summitpost.org/mount-rainier/150291#chapter_6) comprising more detailed information about the routes included in the climbing data CSV file. This information included: duration to summit, difficulty (alpine grade), elevation gain, maximum grade, and season to approach. 
 
-# Part II – Transform
+# Part II – Transform (mount_rainier_etl.ipynb)
 There was a fair amount of cleaning and transforming required for this data.
 
 First, we loaded the CSV files into DataFrames using Pandas in a Jupyter Notebook. We dropped unwanted columns (mentioned above) and renamed columns to make the titles shorter and more intuitive. 
