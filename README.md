@@ -2,7 +2,7 @@
 This mini-project was completed as part of the ETL unit at University of Oreong's Data Analytics & Visualization Bootcamp
 
 
-# Part I - Extract
+# Part I - Extract (Resources)
 
 For this project, we chose a dataset from Kaggle concerning Mt. Rainier weather and climbing data. It includes two CSV files: one with information about different routes to the summit on Mt. Rainier, including date of expedition, number of expeditions attempted on that date, number of successes, and the success percentage. The second file included temperature, wind speed, and humidity data for different dates, as well as some other data we decided to drop, such as Battery Voltage Average, Wind Direction Average, and Solare Radiation Average. 
 
@@ -17,7 +17,7 @@ When we were looking at the climbing data, we realized there were duplicate rows
 
 For the table data that was scraped from the web, our initial scrape resulted in multiple tables. After identifying the table we needed, we saved it for indexing. For this table we dropped unwanted columns and renamed columns to be easier to refer to in SQL. 
 
-# Part III - Load
+# Part III - Load (mtrainier_queries.sql)
 After cleaning and transforming the data, we loaded it into a SQL database using pgAdmin. 
 
 First, we created a climbing data table, a weather table, and a routes table. Once these were created, we started exploring possible queries that could be run on this new database. First, we wanted to see weather for each trip. We weren’t sure if this would work since we had multiple trips on one day, but only one set of weather data for each day. Using a Left Join effectively mapped weather data to each trip, even if it was on the same day. 
